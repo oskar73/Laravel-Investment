@@ -1,0 +1,10 @@
+{
+    "Appointment": true,
+    "Blog": true,
+    "Chat": true,
+    "ECommerce": true,
+    "FileManager": true,
+    "Mail": true,
+    "Social": true,
+    "LandingPages": true
+}

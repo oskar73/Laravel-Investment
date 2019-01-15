@@ -1,0 +1,79 @@
+[data-bs-theme=dark] {
+    .credit-card-widget {
+        .primary-gradient-card {
+            background: linear-gradient(117.76deg, rgba(0, 0, 0, 0.5) -7.21%, rgba(0, 0, 0, 0.01) 118.08%);
+        }
+    }
+
+    .border-white {
+        border-color: var(--bs-border-color) !important;
+    }
+
+    .text-dark {
+        color: var(--bs-white) !important;
+    }
+
+    .text-black {
+        color: var(--bs-white) !important;
+    }
+
+    .bg-white {
+        background: var(--bs-gray-900) !important;
+    }
+    .bg-light {
+        background: var(--bs-body-bg) !important;
+    }
+    .table thead tr th {
+        background-color: #151824;
+    }
+
+    .table-striped {
+        >tbody {
+            >tr {
+                &:nth-of-type(even) {
+                    >* {
+                        --bs-table-accent-bg: #151824;
+                    }
+                }
+            }
+        }
+    }
+
+    .card {
+        box-shadow: 0 0.625rem 1.875rem rgba(255,255,255,.03);
+    }
+
+    .iq-product-tracker .iq-tracker-position-0.active::before {
+        box-shadow: 0 0 0 3px #f9f9f9,0 0 0 5px var(--bs-primary);
+    }
+    .sing-img{
+        filter: invert(1);
+    }
+    .apexcharts-theme-light{
+        .apexcharts-tooltip{
+            background: var(--bs-card-bg);
+            border: 1px solid var(--bs-border-color);
+                .apexcharts-tooltip-title{
+                    background: var(--bs-card-bg);
+                    border: 1px solid var(--bs-border-color);
+                }
+        }
+    }
+    .iq-navbar{
+        &.nav-glass{
+        background: rgba(34,39,56,.5);
+        border-color:var(--bs-border-color);
+        .nav{
+            background: transparent;
+            }
+        }
+    }
+    .apexcharts-title-text {
+        fill: var(--bs-white);
+    }
+    .apexcharts-yaxis-title{
+        .apexcharts-text.apexcharts-yaxis-title-text {
+            fill: var(--bs-white);
+        }
+    }
+}

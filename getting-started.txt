@@ -1,0 +1,34 @@
+Steps to follow for getting started with the template:
+
+1. Start command prompt window or terminal and change directory to hopeui-pro-laravel
+        cd hopeui-pro-laravel
+2. For installing vendor Run in terminal or CMD:
+        composer install
+3.  Copy .env file Run in terminal or CMD:
+        cp .env.example .env
+4. Database Configuration:- https://templates.iqonic.design/hope-ui/pro/documentation/laravel/installation/database-config.html
+5. For generating key Run in terminal or CMD:
+        php artisan key:generate
+6. Create database with name "hope_ui_pro_laravel" in your sqlyog,laragon,xampp,wamp
+        php artisan migrate
+        php artisan db:seed
+        OR
+        php artisan migrate:fresh --seed
+7. For installing node_modules Run in terminal or CMD:
+        npm install
+8. For building css and js Run in terminal or CMD:
+        npm run dev
+        OR
+        npm run build
+        OR
+        npm run watch
+9. To run project
+        php artisan serve
+10. Login Credentials
+    For Admin Login
+        Username:admin@example.com
+        Password:password
+        OR
+    For User Login
+        Username:user@example.com
+        Password:password

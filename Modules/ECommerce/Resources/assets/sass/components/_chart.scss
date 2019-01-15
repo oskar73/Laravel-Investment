@@ -1,0 +1,52 @@
+
+.apexcharts-svg{
+    .apexcharts-yaxis-texts-g{
+        text{
+            fill:var(--bs-gray);
+        }
+    }
+    .apexcharts-xaxis-texts-g{
+        text{
+            fill:var(--bs-gray);
+        }
+    }
+}
+.choices.is-disabled {
+	.choices__inner {
+		background-color: var(--bs-card-bg);
+	}
+	.choices__input {
+		background-color: var(--bs-card-bg);
+	}
+}
+.choices[data-type*=select-one] {
+	&:after {
+		border-color: var(--bs-body-color) transparent transparent;
+	}
+}
+
+.admin-chart-01{
+    min-height: 380px !important;
+}
+.admin-chart-02{
+    min-height: 160px !important;
+}
+.admin-chart-03{
+    min-height: 160px !important;
+}
+@include media-breakpoint-down(xxl) {
+    .admin-chart-01{
+        min-height: 320px !important;
+    }
+    .admin-chart-02{
+        min-height: 140px !important;
+    }
+    .admin-chart-03{
+        min-height: 140px !important;
+    }
+}
+@include media-breakpoint-down(md) {
+    .admin-chart-05{
+        min-height: 200px !important;
+    }
+}

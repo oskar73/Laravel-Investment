@@ -1,0 +1,12 @@
+.user-banner {
+  background-image: url("/images/Banner.png");
+  background-position: center;
+  height: 192px;
+  background-repeat: no-repeat;
+  padding: calc(var(--bs-gutter-x, 1rem) * 2.5);
+  background-size: cover;
+}
+.user-banner h1, .user-banner h2, .user-banner h3, .user-banner h4, .user-banner h5, .user-banner h6,
+.user-banner .h1, .user-banner .h2, .user-banner .h3, .user-banner .h4, .user-banner .h5, .user-banner .h6, .user-banner a, .user-banner p {
+  color: inherit;
+}

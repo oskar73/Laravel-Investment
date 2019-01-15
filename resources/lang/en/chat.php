@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'chat'=>'Chat',
+    'action'=>'Action',
+    'another'=>'Another action',
+    'else_here'=>'Something else here',
+    'status'=>'Status',
+    'last_chats'=>'Last Chats',
+    'lorem_ipsum'=>'lorem ipsum',
+    'typing'=>'Typing...',
+    'view_more'=>'view more',
+    'group_conversations'=>'Group Conversations',
+    'profile'=>'Profile',
+    'contact_manager'=>'Contact manager',
+    'recent_media'=>'Recent Media',
+    'shared_media'=>'Shared Media',
+    'yesterday'=>'Yesterday',
+    'devon'=>'Hi! Devon how are you?',
+    'see'=>'See....! ',
+    'beautiful'=>'This is beautiful...',
+    'today'=>'Today',
+    'lets_meet'=>'Lets meet we’ll discuss about the projects and let then tell the team about the ideas',
+    'projects'=>'Lets meet we’ll discuss about the projects',
+];
