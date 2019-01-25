@@ -1,0 +1,72 @@
+.features-card {
+    margin-top: -310px;
+}
+.sub-header {
+    background-image: url(../images/top-header.webp);
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+    background-color: $primary;
+    background-size: cover;
+    color: $white;
+}
+
+.features-card {
+    padding: 7.5rem 0rem 5.5rem 0rem;
+}
+.banner-second-img img{
+    position: absolute;
+    right: -208px;
+}
+
+.contact-banner {
+    background: var(--bs-secondary);
+    clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 100%, 0 24%);
+
+}
+.star-box {
+    h6 {
+        font-size: 19.128px;
+        font-weight: 400;
+        span {
+            font-weight: 700;
+        }
+    }
+}
+@media screen and (max-width:991px) {
+    .banner-second-img img{
+        position:relative !important;
+        right: 0 !important;
+    }
+}
+@include media-breakpoint-down(xxl) { 
+    .banner-second-img img{
+        position: absolute;
+        right: -60px;
+    }
+}
+@include media-breakpoint-down(xl) {
+    .banner-second-img img{
+        position: absolute;
+        right: -24px;
+    }
+    .features-card {
+        margin-top: -260px;
+        padding: 3.75rem 0rem 0.344rem 0rem;
+    }
+}
+@include media-breakpoint-down(lg) {
+    .image-position {
+        display: grid;
+        justify-content: center;
+    }
+    .banner-one-app {
+        padding: 3.25rem 0rem 3.125rem 0.675rem;
+    }
+    .features-card {
+        margin-top: 0px;
+        padding: 40px 0px 50px 0px;
+    }
+    .features-card {
+        margin-top: 0px;
+    }
+}

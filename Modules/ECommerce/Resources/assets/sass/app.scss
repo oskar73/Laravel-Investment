@@ -1,0 +1,14 @@
+// Configuration
+@import "@/scss/bootstrap/functions";
+// Variables
+@import "@/scss/hope-ui-design-system/variables";
+@import "@/scss/hope-ui-design-system/variables/index";
+@import "@/scss/bootstrap/variables";
+@import "@/scss/bootstrap/mixins";
+
+
+//E-commerce scss
+@import "./components/product";
+@import "./components/users";
+@import "./components/chart";
+@import "./components/cart";

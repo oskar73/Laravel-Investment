@@ -1,0 +1,123 @@
+.user-banner {
+    background-image: url('/images/Banner.png');
+    background-position: center;
+    height: 192px;
+    background-repeat: no-repeat;
+    padding: calc(var(--bs-gutter-x, 1rem) * 2.5);
+    background-size: cover;
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6, a, p{
+        color: inherit;
+    }
+}
+.iq-file-manager{
+    box-shadow: unset;
+    transition: all 300ms ease-in-out;
+    &:hover{
+        box-shadow: $card-box-shadow;
+        transition: all 300ms ease-in-out;
+    }
+}
+.iq-file-manager{
+    .iq-video-hover{
+        .btn-icon{
+            background: rgba($black,.5);
+            top: 40%;
+            left: 40%;
+            height: 3.125rem;
+            width: 3.125rem;
+            opacity: 0;
+            transition: all 300ms ease-in-out;
+        }
+    }
+    &:hover{
+        .iq-video-hover{
+            .btn-icon{
+                opacity: 1;
+                transition: all 300ms ease-in-out;
+            }
+        }
+
+    }
+}
+
+.card-folder{
+    margin-top: 3rem;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        background-color: var(--bs-gray-900);
+        border-radius: $border-radius $border-radius 0 0;
+        width: 50%;
+        height: 1rem;
+        top: -0.85rem;
+        left: 0px;
+    }
+}
+.theme-sharp{
+    .card-folder{
+        &:before {
+            border-radius: 0;
+        }
+    }
+}
+.theme-bordered{
+    .card.card-folder{
+        border: unset;
+    }
+}
+.iq-file-manager-table{
+    tbody{
+        tr{
+            transition: all 300ms ease-in-out;
+            td{
+                .iq-recently-badge{
+                    background-color: rgba(var(--#{$variable-prefix}primary-rgb), 0.1);
+                    color: var(--#{$variable-prefix}primary);
+                    transition: all 300ms ease-in-out;
+                }
+            }
+            &:hover{
+                background: rgba(var(--#{$variable-prefix}primary-rgb), 0.1);
+                transition: all 300ms ease-in-out;
+                td{
+                    .iq-recently-badge{
+                        background-color: $white;
+                        transition: all 300ms ease-in-out;
+                    }
+                }
+            }
+            &:last-child{
+                td{
+                    &:first-child{
+                        border-bottom-left-radius: 0.5rem;
+                    }
+                    &:last-child{
+                        border-bottom-right-radius: 0.5rem;
+                    }
+                }
+            }
+            &:hover{
+                .iq-recently-badge{
+                    background: $white;
+                    transition: all 300ms ease-in-out;
+                }
+            }
+        }
+    }
+}
+.drive-header{
+    width: 20rem;
+}
+.drive-progress{
+    width: 30rem;
+}
+.iq-btn-video {
+    width: 5rem;
+    top: 40%;
+    height: 5rem;
+    left: 45%;
+    position: absolute;
+    background-color: rgba($secondary, 0.5);
+}

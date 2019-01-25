@@ -1,0 +1,126 @@
+//user profile
+.iq-product-order-placed{
+    .user-details-bg-color{
+        background-color: rgba($secondary, 0.1);
+        .iq-order-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+@include media-breakpoint-down(xl) {
+    .iq-product-order-placed{
+        .user-details-bg-color{
+            .iq-order-content{
+                flex-direction: column;
+                align-items: flex-start;
+                .iq-order-user-details{
+                    width: 100%;
+                    order: 2;
+                }
+                .iq-order-id{
+                    order: 1;
+                }
+            }
+        }
+    }
+}
+.user-banner::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    z-index: 0;
+}
+.iq-user-profile{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+    .nav-item{
+        .nav-link{
+            background-color: rgba($secondary, 0.1);
+            color: $secondary;
+            transition: all 300ms ease;
+            padding: 1rem;
+            border-radius: $border-radius;
+            &.active{
+                background-color: var(--#{$variable-prefix}primary);
+                color: $white;
+                transition: all 300ms ease;
+            }
+        }
+    }
+}
+.iq-user-address{
+    box-shadow: unset;
+    transition: 300ms ease-in-out;
+    &:hover{
+        box-shadow: $card-box-shadow;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+    }
+}
+.credit-cards{
+    .accordion-item{
+        background-color: unset !important;
+        box-shadow: 0px 8px 32px rgba($black, 0.05);
+    }
+}
+
+.edit-img{
+    box-shadow: 0px 8px 32px rgba($black, 0.05);
+}
+.iq-icon-edit{
+    top: 6rem;
+    right: 0rem;
+}
+.iq-icon-cancel{
+    top: 6rem;
+    left: 0rem;
+}
+
+//admin-dashboard
+@include media-breakpoint-down(sm) {
+    .selling-card{
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: unset !important;
+        justify-content: center;
+        img{
+            width: 100% !important;
+            margin-right: unset !important;
+        }
+        .selling-details{
+            margin-top: 1rem;
+            margin-left: unset !important;
+        }
+    }
+}
+
+
+//media query
+@include media-breakpoint-down(lg) {
+    .iq-user-profile{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+@include media-breakpoint-down(sm) {
+    .iq-user-profile{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .card-details{
+        display: none;
+    }
+}
+
+//dought full
+
+.iq-product-bg{
+    background-color: rgba($secondary,0.1);
+}

@@ -1,0 +1,192 @@
+.user-banner {
+  background-image: url(../images/Banner.png);
+  background-position: center;
+  height: 192px;
+  background-repeat: no-repeat;
+  padding: calc(var(--bs-gutter-x, 1rem) * 2.5);
+  background-size: cover;
+  color: #fff;
+}
+.user-banner h1, .user-banner h2, .user-banner h3, .user-banner h4, .user-banner h5, .user-banner h6,
+.user-banner .h1, .user-banner .h2, .user-banner .h3, .user-banner .h4, .user-banner .h5, .user-banner .h6, .user-banner a, .user-banner p {
+  color: inherit;
+}
+
+.iq-word-wrap {
+  word-spacing: -0.438rem;
+}
+
+.iq-email-listbox .iq-email-sender-list {
+  margin: 0.938rem 0 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+.iq-email-listbox .iq-email-sender-list > li {
+  list-style-type: none;
+}
+.iq-email-listbox .iq-email-sender-list > li .iq-unread-inner {
+  position: relative;
+  padding: 0.938rem 1.25rem;
+  border-top: 1px solid var(--bs-border-color);
+  display: inline-block;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.iq-email-listbox .iq-email-sender-list > li:first-child .iq-unread-inner {
+  border-top: unset;
+}
+.iq-email-listbox .iq-email-sender-list li a:hover {
+  text-decoration: none;
+}
+.iq-email-listbox .iq-email-sender-list li:hover .iq-social-media {
+  right: 0rem;
+}
+
+.iq-email-sender-info .iq-checkbox-mail {
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+.iq-email-sender-info .iq-checkbox-mail .form-check {
+  margin-bottom: unset;
+}
+.iq-email-sender-info .iq-email-title {
+  color: var(--bs-heading-color);
+  position: absolute;
+  top: 0;
+  left: 5.313rem;
+  right: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 0;
+  line-height: 3.5rem;
+}
+
+.iq-email-content {
+  position: absolute;
+  top: 0;
+  left: 18.75rem;
+  right: 0;
+  bottom: 0;
+  line-height: 3.5rem;
+}
+.iq-email-content .iq-email-date {
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  right: 1.25rem;
+  width: 6.25rem;
+  text-align: right;
+  padding-left: 0.625rem;
+  color: #8A92A6;
+  transition: all 0.3s ease-in-out;
+}
+.iq-email-content .iq-email-subject {
+  position: absolute;
+  top: 0;
+  color: var(--bs-heading-color);
+  left: 0;
+  right: 6.875rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 3.4rem;
+}
+
+.email-app-details.show {
+  visibility: visible;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  transform: translateX(0);
+  overflow-y: scroll;
+}
+
+.email-app-details {
+  position: absolute;
+  display: block;
+  z-index: 6;
+  visibility: hidden;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  left: auto;
+  right: 0;
+  background-color: #fff;
+}
+
+.iq-email-listbox .iq-email-sender-list > li:hover {
+  background: var(--bs-body-bg);
+}
+.iq-email-listbox .iq-email-sender-list > li:hover .iq-email-content .iq-email-date {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.iq-email-listbox .iq-email-sender-list li:hover .iq-social-media {
+  right: 0;
+}
+
+.iq-email-sender-list .iq-social-media {
+  position: absolute;
+  line-height: 3.5rem;
+  right: -14.688rem;
+  top: 0;
+  background: transparent;
+  font-size: 1.125rem;
+  padding: 0 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.iq-social-media {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.iq-social-media .iq-social-icons {
+  color: var(--bs-heading-color);
+}
+
+@media (max-width: 991.98px) {
+  .iq-mail-section {
+    display: none;
+  }
+}
+@media (min-width: 360px) and (max-width: 640px) {
+  .iq-header-page {
+    display: none;
+  }
+  .iq-header-messagebox {
+    margin-right: 5rem !important;
+  }
+  .iq-tab-nav {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .mail-data .nav-tabs {
+    order: 2;
+  }
+  .mail-data .iq-extra-mail-content {
+    padding: 0.75rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-dialog.iq-custom-mail-modal {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 100vh;
+  }
+}

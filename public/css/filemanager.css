@@ -1,0 +1,102 @@
+.user-banner {
+  background-image: url("/images/Banner.png");
+  background-position: center;
+  height: 192px;
+  background-repeat: no-repeat;
+  padding: calc(var(--bs-gutter-x, 1rem) * 2.5);
+  background-size: cover;
+}
+.user-banner h1, .user-banner h2, .user-banner h3, .user-banner h4, .user-banner h5, .user-banner h6,
+.user-banner .h1, .user-banner .h2, .user-banner .h3, .user-banner .h4, .user-banner .h5, .user-banner .h6, .user-banner a, .user-banner p {
+  color: inherit;
+}
+
+.iq-file-manager {
+  box-shadow: unset;
+  transition: all 300ms ease-in-out;
+}
+.iq-file-manager:hover {
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.03);
+  transition: all 300ms ease-in-out;
+}
+
+.iq-file-manager .iq-video-hover .btn-icon {
+  background: rgba(0, 0, 0, 0.5);
+  top: 40%;
+  left: 40%;
+  height: 3.125rem;
+  width: 3.125rem;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+.iq-file-manager:hover .iq-video-hover .btn-icon {
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+
+.card-folder {
+  margin-top: 3rem;
+  position: relative;
+}
+.card-folder:before {
+  content: "";
+  position: absolute;
+  background-color: var(--bs-gray-900);
+  border-radius: 0.25rem 0.25rem 0 0;
+  width: 50%;
+  height: 1rem;
+  top: -0.85rem;
+  left: 0px;
+}
+
+.theme-sharp .card-folder:before {
+  border-radius: 0;
+}
+
+.theme-bordered .card.card-folder {
+  border: unset;
+}
+
+.iq-file-manager-table tbody tr {
+  transition: all 300ms ease-in-out;
+}
+.iq-file-manager-table tbody tr td .iq-recently-badge {
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  color: var(--bs-primary);
+  transition: all 300ms ease-in-out;
+}
+.iq-file-manager-table tbody tr:hover {
+  background: rgba(var(--bs-primary-rgb), 0.1);
+  transition: all 300ms ease-in-out;
+}
+.iq-file-manager-table tbody tr:hover td .iq-recently-badge {
+  background-color: #fff;
+  transition: all 300ms ease-in-out;
+}
+.iq-file-manager-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 0.5rem;
+}
+.iq-file-manager-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5rem;
+}
+.iq-file-manager-table tbody tr:hover .iq-recently-badge {
+  background: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.drive-header {
+  width: 20rem;
+}
+
+.drive-progress {
+  width: 30rem;
+}
+
+.iq-btn-video {
+  width: 5rem;
+  top: 40%;
+  height: 5rem;
+  left: 45%;
+  position: absolute;
+  background-color: rgba(0, 31, 77, 0.5);
+}
