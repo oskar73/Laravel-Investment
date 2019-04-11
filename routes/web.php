@@ -162,5 +162,5 @@ Route::group(['prefix' => 'icons'], function() {
 //Extra Page Routs
 Route::get('blank-page',[HomeController::class, 'blankPage'])->name('pages.blank-page');
 Route::get('privacy-policy', [HomeController::class, 'privacyPolicy'])->name('pages.privacy-policy');
-Route::get('terms-of-use', [HomeController::class, 'termsOfUse'])->name('pages.term-of-use');
+Route::get('terms-of-use', [HomeController::class, 'termsOfUse'])->name('pages.term-of-use'); 
                                      
