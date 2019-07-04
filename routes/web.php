@@ -166,4 +166,4 @@ Route::get('terms-of-use', [HomeController::class, 'termsOfUse'])->name('pages.t
 
 
 
-               
+                
