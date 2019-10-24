@@ -159,13 +159,6 @@ Route::group(['prefix' => 'icons'], function() {
     Route::get('dualtone', [HomeController::class, 'dualtone'])->name('icons.dualtone');
     Route::get('colored', [HomeController::class, 'colored'])->name('icons.colored');
 });
-<<<<<<< HEAD
-//Extra Page Routs 
-Route::get('blank-page',[HomeController::class, 'blankPage'])->name('pages.blank-page');
-Route::get('privacy-policy', [HomeController::class, 'privacyPolicy'])->name('pages.privacy-policy');
-Route::get('terms-of-use', [HomeController::class, 'termsOfUse'])->name('pages.term-of-use'); 
-                                                                                                                                         
-=======
 //Extra Page Routs
 Route::get('blank-page',[HomeController::class, 'blankPage'])->name('pages.blank-page');
 Route::get('privacy-policy', [HomeController::class, 'privacyPolicy'])->name('pages.privacy-policy');
@@ -175,4 +168,4 @@ Route::get('terms-of-use', [HomeController::class, 'termsOfUse'])->name('pages.t
 
  
                                                                                                                       
->>>>>>> b6da86a0141716b969a66ddfabc1d5c8938307b4
+ 
